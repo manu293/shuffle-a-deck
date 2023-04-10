@@ -1,3 +1,36 @@
+# Deck of Cards Shuffler
+
+This project is a simple React application that displays a deck of cards and allows the user to shuffle the deck and reveal one card at a time. The deck of cards is shuffled using the Fisher-Yates shuffle algorithm.
+
+## Approach
+
+- A standard deck of 52 playing cards is generated using a helper function.
+- The deck is stored in the state of the main React component.
+- A "Shuffle Deck" button triggers the shuffling of the deck using the Fisher-Yates shuffle algorithm.
+- The application initially displays a face-down card. Clicking on the "Shuffle Deck" button reveals the first card in the shuffled deck.
+- Clicking on the card reveals the next card in the shuffled deck until all cards have been revealed.
+- Card images are sourced from a third-party service (deckofcardsapi), and are only rendered once the image has been fully downloaded, ensuring a seamless user experience.
+
+## Steps to Run the Project Locally
+
+### Clone the repository:
+
+`git clone https://github.com/yourusername/deck-of-cards-shuffler.git`
+
+### Change Directory
+
+`cd deck-of-cards-shuffler`
+
+### Install the dependencies:
+
+`npm install`
+
+### Start the development server:
+
+`npm start`
+
+Open your browser and navigate to http://localhost:3000 to view the running application
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -5,42 +38,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
-
-### `npm start`
+`npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
